@@ -30,6 +30,7 @@ p, li {
 .content div {
       padding-left: 10px;
       padding-top: 10px;
+      padding-right: 10px;
   }
 
 ul {
