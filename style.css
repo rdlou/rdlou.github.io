@@ -13,7 +13,6 @@
     justify-items: start; 
     align-items: start; 
     max-width: 790px;
-    /* border: 1px solid black; */
     margin: 40px;
   }
 
@@ -43,7 +42,6 @@ li {
 	margin: 0;
 	padding: 0 0 10px  50px;
 	list-style: none;
-
 	background-image: url("./assets/water-lily.png");
 	background-repeat: no-repeat;
 	background-position: left top;
@@ -54,8 +52,6 @@ li {
 .span {
   grid-column-start: 1;
   grid-column-end: 3;
-  /* border: 1px solid red; */
-
 }
 
 .span img{
@@ -107,14 +103,12 @@ img:hover {
 
 @media(max-width:840px){
     .content {
-      grid-template-columns: minmax(375px, 1fr);
+      grid-template-columns: minmax(320px, 1fr);
       gap: 0px;
     }
     .span {
       grid-column-start: 1;
       grid-column-end: 2;
-      /* border: 1px solid red; */
-    
     }
 
     ul.bullet {
