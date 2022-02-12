@@ -1,0 +1,135 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 10px 10px; 
+    justify-items: center; 
+    align-items: start; 
+  }
+
+.content {
+    display: grid; 
+    grid-template-columns: repeat(2, 375px); 
+    gap: 10px 10px; 
+    justify-items: start; 
+    align-items: start; 
+    max-width: 790px;
+    /* border: 1px solid black; */
+    margin: 40px;
+  }
+
+h1 {
+      margin-block-end: 0%;
+      margin-block-start: 0%;
+  }
+
+p, li {
+      font-size: calc(20px + 0.3vw);
+      line-height: 1.5;
+      margin-block-start: 0%;
+  }
+
+.content div {
+      padding-left: 10px;
+      padding-top: 10px;
+  }
+
+ul {
+      margin-block-start: 0%;
+      margin-inline-start: 0%;
+      padding-inline-start: 10px;
+  }
+
+li {
+	margin: 0;
+	padding: 0 0 10px  50px;
+	list-style: none;
+
+	background-image: url("./assets/water-lily.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 20px;
+}
+
+
+.span {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* border: 1px solid red; */
+
+}
+
+.span img{
+    border: 2px solid #f757d4;
+}
+
+img {
+      width: 100%;
+      height: auto;
+  }
+
+.content div.span img {
+    max-width: 780px;
+}
+
+a {
+  color: black;
+}
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.project {
+  display:grid;
+  grid-template-columns: minmax(375px,750px);
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@media(max-width:840px){
+    .content {
+      grid-template-columns: minmax(375px, 1fr);
+      gap: 0px;
+    }
+    .span {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      /* border: 1px solid red; */
+    
+    }
+
+    ul.bullet {
+      margin-block-end: 0em;
+    }
+
+    div.image {
+      text-align: center;
+    }
+
+    div.span img{
+      width: 100%;
+    }
+
+    .content img {
+      width: 70%;
+    }
+  }

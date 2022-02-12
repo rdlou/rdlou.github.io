@@ -1,0 +1,47 @@
+<<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <div class="project">
+                <div>
+                    <h1>CanICovid</h1>
+                    <p>CanICovid was search engine questions relating to laws and advice in the UK on the Covid-19 crisis. It's aim was to intelligently match questions, and give a yes or no answer.
+                    The entire project was built withPython, Django, MongoDB and ElasticSearch</p>
+                </div>
+                <div>
+                    <h2>Initial Plan</h2>
+                    <p>There was a lot of confusion as to what you should and shouldn't do during the start of the pandemic in the UK. My plan was to build a service which you could ask a question, and it would give a definative yes or no answer. I wanted to take this opportunity to learn about ElasticSearch.
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="../assets/canicovid.gif" />
+                </div>
+                <div>
+                    <h2>Tech Stuff</h2>
+                    <p>Within Django I had 2 models, Answers and Questions. Each question had a foreign key of an answer, meaning an answer could have many questions. Setting up ElasticSearch was fun, and once I went through the documentation on how to use it to properly query my database it became a lot more enjoyable . The interesting part of this project was matching what the user searches to a question in my database. This was done by extracting keywords from the Question, stemming them and then searching on those. The CSS was from <a href="https://andybrewer.github.io/mvp/mvp.css" target="_blank">andybrewer</a>.</p>
+                </div>
+                <div>
+                    <h2>Results</h2>
+                    <p>I'm not sure whether I ever planned on releasing this. By the time I was happy with it (which I'm not completely) the laws in the UK had got strict enough that you could just respond with "No" to every question. Also, I'm not sure about my liabilities on this one if it ever got used. However, I learnt a decent amount doing it. I also think there might be room for a framework which allows companies to build their own Yes No search engine for their services. There's generally too much information and nuance in FAQs.</p>
+                </div>
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
