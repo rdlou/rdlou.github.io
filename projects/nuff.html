@@ -32,11 +32,12 @@
                     </p>
                 </div>
                 <div class="image">
-                    <img src="../assets/nuff.png" />
+                    <img src="../assets/nuff-2.jpeg" />
                 </div>
                 <div>
                     <h2>Tech Stuff</h2>
-                    <p>I built the back-end with Django using the django-rest-framework. A lot of the information we store on each establishment is taken from the google places api. This meant I had to build custom save methods that populated the medessary fields on save. Places are returned to the front end ordered by distance from the users current location. I wanted to expand my knowledge for this project and use PostgreSQL, but we decided that Mongo was a better fit and it would cost us less (important considering we're not planning on making any money from this). Images are managed by Cloudinary - a dreamy service. The Django app sits on Heroku and Mongo is hosted by Atlas.</p>
+                    <p>I built the back-end with Django using the django-rest-framework. A lot of the information we store on each establishment is taken from the google places api. This meant I had to build custom save methods that populated the necessary fields on save and post_save signals. Places are returned to the front end ordered by distance from the users current location. I wanted to expand my knowledge for this project and use PostgreSQL, but we decided that Mongo was a better fit and it would cost us less (important considering we're not planning on making any money from this). Images are managed by Cloudinary - a dreamy service. The Django app sits on Heroku and Mongo is hosted by Atlas.</p>
+                    <p>UPDATE: Have switched back to PostgreSQL hosted on an Amazon RDS instance.  Mongo drivers are a little outdated in Django so moving back to Postgres made most sense.</p>
                 </div>
                 <div>
                     <h2>Results</h2>
