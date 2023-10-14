@@ -69,6 +69,7 @@ span .info {
 img {
       width: 100%;
       height: auto;
+      border-radius: 5px;
   }
 
 .content div.span img {
