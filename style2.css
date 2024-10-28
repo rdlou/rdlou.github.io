@@ -67,6 +67,15 @@ body {
   text-align: right;
 }
 
+.content ul a:hover li {
+  background-color: rgb(236, 234, 234);
+}
+
+/* Add a subtle transition for a smoother effect */
+.content li {
+  transition: background-color 0.2s ease;
+}
+
 .content.about {
   display: grid;
   grid-template-columns: auto 1fr;
