@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Can I Covid Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style2.css"> <!-- Link to correct CSS -->
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <ul>
+                    <li><a href="../index.html">About</a></li> <!-- Updated path -->
+                    <li><a href="../work.html">Work/Writing</a></li> <!-- Updated path -->
+                    <li><a href="../contact.html">Contact</a></li> <!-- Updated path -->
+                </ul>
+            </div>
+            <div class="content">
+                <!-- Breadcrumb link -->
+                <p class="breadcrumb"><a href="../work.html">&lt; Back to Work/Writing</a></p>
+                <div class="project-content">
+                    <!-- Content copied from original canicovid.html -->
+                     <div>
+                        <h1>CanICovid</h1>
+                        <p>CanICovid was search engine questions relating to laws and advice in the UK on the Covid-19 crisis. It's aim was to intelligently match questions, and give a yes or no answer.
+                        The entire project was built withPython, Django, MongoDB and ElasticSearch</p>
+                    </div>
+                    <div>
+                        <h2>Initial Plan</h2>
+                        <p>There was a lot of confusion as to what you should and shouldn't do during the start of the pandemic in the UK. My plan was to build a service which you could ask a question, and it would give a definative yes or no answer. I wanted to take this opportunity to learn about ElasticSearch.
+                        </p>
+                    </div>
+                    <div class="project-image"> <!-- Updated class -->
+                        <img src="../assets/canicovid.gif" /> <!-- Path is correct -->
+                    </div>
+                    <div>
+                        <h2>Tech Stuff</h2>
+                        <p>Within Django I had 2 models, Answers and Questions. Each question had a foreign key of an answer, meaning an answer could have many questions. Setting up ElasticSearch was fun, and once I went through the documentation on how to use it to properly query my database it became a lot more enjoyable . The interesting part of this project was matching what the user searches to a question in my database. This was done by extracting keywords from the Question, stemming them and then searching on those. The CSS was from <a href="https://andybrewer.github.io/mvp/mvp.css" target="_blank">andybrewer</a>.</p>
+                    </div>
+                    <div>
+                        <h2>Results</h2>
+                        <p>I'm not sure whether I ever planned on releasing this. By the time I was happy with it (which I'm not completely) the laws in the UK had got strict enough that you could just respond with "No" to every question. Also, I'm not sure about my liabilities on this one if it ever got used. However, I learnt a decent amount doing it. I also think there might be room for a framework which allows companies to build their own Yes No search engine for their services. There's generally too much information and nuance in FAQs.</p>
+                    </div>
+                    <!-- End of copied content -->
+                </div>
+            </div>
+        </div>
+        <!-- Removed script tag -->
+    </body>
+</html>

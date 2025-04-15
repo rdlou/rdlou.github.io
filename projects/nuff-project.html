@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nuff Project</title> <!-- Added a title -->
+        <meta name="description" content="Nuff project details">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style2.css"> <!-- Link to the correct CSS -->
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <ul>
+                    <li><a href="../index.html">About</a></li>
+                    <li><a href="../work.html">Work/Writing</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <!-- Breadcrumb link -->
+                <p class="breadcrumb"><a href="../work.html">&lt; Back to Work/Writing</a></p>
+                <!-- Content copied from projects/nuff.html <div class="project"> -->
+                <div class="project-content"> <!-- Changed class to use existing styles -->
+                    <div>
+                        <h1>Nuff</h1>
+                        <a href="https://apps.apple.com/gb/app/nuff/id1535231249" target="_blank"><img src="../assets/app-store-nuff.svg" style="max-width: 200px;"/></a> <!-- Adjusted path -->
+                        <p>Nuff is a curated list of bars and restaurants London that are of high quality and fresh even for Londoners.
+                        I built Nuff's back-end with Python, Django, MongoDB and Heroku.</p>
+                    </div>
+                    <div>
+                        <h2>Initial Plan</h2>
+                        <p>Myself and <a href="http://jacksd.co.uk" target="_blank">Jack</a> wanted to build an app that highlighted the best places in London. There seems to be a lot of services/sites which list everywhere in London, but we wanted something that was curated. DoJo closed down. Jack and I thought we could build something similar without it costing too much.
+                        </p>
+                    </div>
+                    <div class="project-image"> <!-- Added wrapper class for image -->
+                        <img src="../assets/nuff-2.jpeg" /> <!-- Adjusted path -->
+                    </div>
+                    <div>
+                        <h2>Tech Stuff</h2>
+                        <p>I built the back-end with Django using the django-rest-framework. A lot of the information we store on each establishment is taken from the google places api. This meant I had to build custom save methods that populated the necessary fields on save and post_save signals. Places are returned to the front end ordered by distance from the users current location. I wanted to expand my knowledge for this project and use PostgreSQL, but we decided that Mongo was a better fit and it would cost us less (important considering we're not planning on making any money from this). Images are managed by Cloudinary - a dreamy service. The Django app sits on Heroku and Mongo is hosted by Atlas.</p>
+                        <p>UPDATE: Have switched back to PostgreSQL hosted on an Amazon RDS instance.  Mongo drivers are a little outdated in Django so moving back to Postgres made most sense.</p>
+                    </div>
+                    <div>
+                        <h2>Results</h2>
+                        <p>We'll see. Very excited to see how much traction this gets. It seemed that a lot of people were gutted that DoJo closed down, so we're hoping to fill that hole for the. If all else fails, it's a decent excuse to visit bars and restaurants.</p>
+                    </div>
+                </div>
+                <!-- End of copied content -->
+            </div>
+        </div>
+        <!-- Removed script tag from original nuff.html -->
+    </body>
+</html>
