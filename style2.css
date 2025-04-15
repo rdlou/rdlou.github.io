@@ -81,7 +81,8 @@ body {
   grid-template-columns: auto 1fr;
   gap: 2em;
   height: calc(100vh - 10vh);
-  padding-left: 2em; /* Reduced from 4vw to match work page spacing */
+  padding-left: 2em;
+  max-width: 840px; /* Match the max-width from the work page's media query */
 }
 
 .image-section {
@@ -97,6 +98,7 @@ body {
 
 .text-section {
   padding: 0 2em;
+  max-width: 700px; /* Set max-width to match the text area in work page */
 }
 
 .text-section h1 {
