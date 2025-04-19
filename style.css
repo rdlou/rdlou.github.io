@@ -287,4 +287,19 @@ a {
     .project-content {
       padding: 0 1em;
     }
+
+    /* Mobile Contact page styles */
+    .content > ul:not(:has(.title)) {
+      padding: 0 1rem;
+    }
+
+    .content > ul:not(:has(.title)) li {
+      border: none;
+      padding: 0.5rem 0;
+    }
+
+    .content > ul:not(:has(.title)) li a {
+      text-decoration: none;
+      color: black;
+    }
 }
