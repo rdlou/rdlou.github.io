@@ -252,11 +252,11 @@ a {
       padding-top: 0;
     }
 
-    /* Mobile About page styles */
+    /* Mobile About/Contact page styles */
     .content.about {
       grid-template-columns: 1fr;
       height: auto;
-      padding: 0 1em;
+      padding: 0 1rem;
     }
 
     .text-section {
@@ -264,23 +264,17 @@ a {
       order: 1;
     }
 
+    .text-section p {
+      margin: 1rem 0;
+    }
+
+    .text-section a {
+      text-decoration: none;
+      color: black;
+    }
+
     .text-section h1 {
       display: none;
-    }
-
-    .image-section {
-      height: auto;
-      max-height: 50vh;
-      padding-right: 0;
-      order: 2;
-      margin-top: 2em;
-    }
-
-    .image-section img {
-      width: 100%;
-      height: auto;
-      max-height: 50vh;
-      object-fit: contain;
     }
 
     /* Mobile project page styles */
