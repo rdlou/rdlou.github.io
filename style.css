@@ -97,7 +97,7 @@ body {
 }
 
 .text-section {
-  padding: 0 2em;
+  padding: 0;
   max-width: 700px; /* Set max-width to match the text area in work page */
 }
 
@@ -206,26 +206,26 @@ a {
     }
 
     /* Mobile Work page styles */
-    .content {
-      grid-template-columns: minmax(320px, 1fr);
-      gap: 0px;
-      padding: 0 1em;
-      max-width: 840px;
-      margin: 0 auto;
+    .content ul {
+      padding: 0 1rem; /* Add padding to match .content.about */
+      margin: 0;
     }
 
     .content li {
-      grid-template-columns: 1fr auto;
+      display: grid;
       grid-template-areas:
         "title date"
         "summary summary";
-      padding: 1rem 0;
-      border-bottom: 1px solid rgb(236, 234, 234);
-      gap: 0.5rem;
+      grid-template-columns: auto max-content;
+      gap: 0.2rem 1rem;
+      padding: 1rem 0; /* Remove horizontal padding, rely on ul padding */
+      border-top: 1px solid rgb(236, 234, 234);
+      align-items: baseline;
     }
 
     .content li div.title {
       grid-area: title;
+      text-align: left;
       font-weight: bold;
     }
 
@@ -261,11 +261,15 @@ a {
 
     .text-section {
       padding: 0;
+      margin: 0;
       order: 1;
+      max-width: none;
     }
 
     .text-section p {
       margin: 1rem 0;
+      line-height: 1.6;
+      text-align: left;
     }
 
     .text-section a {
@@ -275,6 +279,21 @@ a {
 
     .text-section h1 {
       display: none;
+    }
+
+    .image-section {
+      height: auto;
+      max-height: 50vh;
+      padding-right: 0;
+      order: 2;
+      margin-top: 2rem;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      max-height: 50vh;
+      object-fit: contain;
     }
 
     /* Mobile project page styles */
